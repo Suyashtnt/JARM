@@ -25,7 +25,7 @@ jobs:
         java-version: 1.8	
     
     - name: Echo Build Number
-      run: echo ${{ steps.my-project-build-number.outputs.build-number }}
+      run: echo  "build/libs/JARM-"+"${{ steps.my-project-build-number.outputs.build-number }}"+".jar"
       env:
         BUILD_NUMBER: ${{ steps.my-project-build-number.outputs.build-number }}
           
@@ -38,7 +38,7 @@ jobs:
     - name: rename file
       env:
         TIME: "${{ steps.current-time.outputs.formattedTime }}"
-      run: mv build/libs/modid-1.0.jar "build/libs/JARM-"+"${{ steps.current-time.outputs.formattedTime }}"+".jar"
+      run: mv build/libs/modid-1.0.jar "build/libs/JARM-"+"${{ steps.my-project-build-number.outputs.build-number }}"+".jar"
       
     - name: Upload a Build Artifact	
       uses: actions/upload-artifact@v2.0.1
