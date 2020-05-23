@@ -24,9 +24,9 @@ jobs:
       uses: srfrnk/current-time@v1.1.0
       with:
         # Time format to use using [MomemtJS syntax](https://momentjs.com/)
-        format: DD-MM
+        format: DDMM
     - name: Use current time
-      run: echo ${{ steps.current-time.outputs.formattedTime }}
+      run: echo ${{ steps.current-time.outputs.formattedTime }} ${{ steps.current-time.outputs.time }}
     - name: Create a Release
       uses: actions/create-release@v1
       env:
