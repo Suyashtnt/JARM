@@ -31,3 +31,14 @@ jobs:
         name: JARM.jar
         # A file, directory or wildcard pattern that describes what to upload	
         path: build/libs/modid-1.0.jar
+    - name: Upload to curseforge
+      uses: itsmeow/curseforge-upload@master
+      with:
+        token: ${{ secrets.CF_API_TOKEN }}
+        project_id: 385265
+        game_endpoint: minecraft
+        file_path: build/libs/modid-1.0.jar
+        changelog: updated mod, changelog on github
+        display_name: JARM
+        game_versions: 1.15.2,Java 8,Forge
+        release_type: alpha
