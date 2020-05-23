@@ -66,23 +66,4 @@ jobs:
         game_versions: 1.15.2,Java 8,Forge
         release_type: alpha
 
-    - name: Create an Tag
-      uses: simpleactions/create-tag@v1.0.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        sha: GITHUB_SHA
-        tag: ${{ steps.my-project-build-number.outputs.build-number }}
-        # The message
-        message: Version ${{ steps.my-project-build-number.outputs.build-number }}
-    - name: GH Release
-      uses: softprops/action-gh-release@v0.1.5
-      with:
-        tag_name: ${{ steps.my-project-build-number.outputs.build-number }}
-        # Note-worthy description of changes in release
-        body: still need to make one :\\
-        # Gives the release a custom name. Defaults to tag name
-        name: Version ${{ steps.my-project-build-number.outputs.build-number }}
-        # Identify the release as a prerelease. Defaults to false
-        prerelease: true
-        # Newline-delimited list of path globs for asset files to upload
-        files: build/libs/JARM-${{ steps.my-project-build-number.outputs.build-number }}.jar
+
