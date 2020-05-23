@@ -27,7 +27,7 @@ jobs:
         # The name of the tag. This should come from the webhook payload, `github.GITHUB_REF` when a user pushes a new tag
         tag_name: ${{ steps.my-project-build-number.outputs.build-number }}
         # The name of the release. For example, `Release v1.0.1`
-        release_name: version {{ steps.my-project-build-number.outputs.build-number }}
+        release_name: version ${{ steps.my-project-build-number.outputs.build-number }}
         # Text describing the contents of the tag.
         body: creator still needs to make one
         # `true` to identify the release as a prerelease. `false` to identify the release as a full release. Default: `false`
