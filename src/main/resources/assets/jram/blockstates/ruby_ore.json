@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "jram:block/ruby_ore"
+    }
+  }
+}

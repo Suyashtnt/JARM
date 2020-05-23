@@ -1,0 +1,29 @@
+{
+  "group": "jram",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "jram:ruby"
+    },
+    "1": {
+      "item": "jram:ruby"
+    },
+    "2": {
+      "item": "jram:ruby"
+    },
+    "3": {
+      "item": "jram:ruby"
+    },
+    "5": {
+      "item": "jram:ruby"
+    }
+  },
+  "result": {
+    "item": "jram:ruby_armor_armorhelmet",
+    "count": 1
+  }
+}

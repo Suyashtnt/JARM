@@ -1,0 +1,30 @@
+{
+  "group": "jram",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "jram:ruby"
+    },
+    "1": {
+      "item": "jram:ruby"
+    },
+    "2": {
+      "item": "jram:ruby"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "jram:ruby_tools_pickaxe",
+    "count": 1
+  }
+}

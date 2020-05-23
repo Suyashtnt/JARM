@@ -1,0 +1,39 @@
+{
+  "group": "jram",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "jram:ruby"
+    },
+    "2": {
+      "item": "jram:ruby"
+    },
+    "3": {
+      "item": "jram:ruby"
+    },
+    "4": {
+      "item": "jram:ruby"
+    },
+    "5": {
+      "item": "jram:ruby"
+    },
+    "6": {
+      "item": "jram:ruby"
+    },
+    "7": {
+      "item": "jram:ruby"
+    },
+    "8": {
+      "item": "jram:ruby"
+    }
+  },
+  "result": {
+    "item": "jram:ruby_armor_armorbody",
+    "count": 1
+  }
+}

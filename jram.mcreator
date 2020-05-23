@@ -1,0 +1,275 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Ruby",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby"
+    },
+    {
+      "name": "BlockOfRuby",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_of_ruby"
+    },
+    {
+      "name": "AlmostLikeDiamond",
+      "type": "achievement",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "almost_like_diamond"
+    },
+    {
+      "name": "RubyOre",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_ore"
+    },
+    {
+      "name": "RubyBlockRecipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_block_recipe"
+    },
+    {
+      "name": "RubyEnforcedBow",
+      "type": "gun",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_enforced_bow"
+    },
+    {
+      "name": "ThatArrowIsStong",
+      "type": "achievement",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "that_arrow_is_stong"
+    },
+    {
+      "name": "RubyEnforcedBowBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_enforced_bow_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RubyToolsPickaxe",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_tools_pickaxe"
+    },
+    {
+      "name": "RubyToolsAxe",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_tools_axe"
+    },
+    {
+      "name": "RubyToolsSword",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_tools_sword"
+    },
+    {
+      "name": "RubyToolsShovel",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_tools_shovel"
+    },
+    {
+      "name": "RubyToolsHoe",
+      "type": "tool",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_tools_hoe"
+    },
+    {
+      "name": "RubyToolsPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_tools_pickaxe_recipe"
+    },
+    {
+      "name": "RubyToolsAxeRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_tools_axe_recipe"
+    },
+    {
+      "name": "RubyToolsSwordRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_tools_sword_recipe"
+    },
+    {
+      "name": "RubyToolsShovelRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_tools_shovel_recipe"
+    },
+    {
+      "name": "RubyToolsHoeRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_tools_hoe_recipe"
+    },
+    {
+      "name": "RubyBowRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_bow_recipe"
+    },
+    {
+      "name": "RubyArmorArmor",
+      "type": "armor",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_armor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "RubyArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_armor_armor_helmet_recipe"
+    },
+    {
+      "name": "RubyArmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_armor_armor_body_recipe"
+    },
+    {
+      "name": "RubyArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_armor_armor_leggings_recipe"
+    },
+    {
+      "name": "RubyArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_armor_armor_boots_recipe"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.jram.ruby_tools_shovel": "RubyTools Shovel",
+      "item.jram.ruby_armor_armorboots": "Ruby Boots",
+      "advancements.almost_like_diamond.title": "Almost Like Diamond",
+      "item.jram.ruby_armor_armorlegs": "Ruby Leggings",
+      "item.jram.ruby_tools_axe": "Ruby Axe",
+      "item.jram.ruby_tools_sword": "Ruby Sword",
+      "item.jram.ruby": "Ruby",
+      "item.jram.ruby_armor_armorbody": "Ruby Chestplate",
+      "advancements.that_arrow_is_stong.descr": "Shoot a mob with a ruby arrow",
+      "advancements.almost_like_diamond.descr": "Get your first ruby",
+      "item.jram.ruby_armor_armorhelmet": "Ruby Helmet",
+      "item.jram.ruby_tools_pickaxe": "Ruby Pickaxe",
+      "advancements.that_arrow_is_stong.title": "That Arrow Is Stong!",
+      "item.jram.ruby_tools_hoe": "Ruby Hoe",
+      "item.jram.ruby_enforced_bow": "Ruby Enforced Bow",
+      "block.jram.block_of_ruby": "Block Of Ruby",
+      "block.jram.ruby_ore": "Ruby Ore"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "jram",
+    "modName": "Just Another Ruby Mod",
+    "version": "1.0.0",
+    "author": "Home, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "com.tntmaninc.jram",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000321322
+}
