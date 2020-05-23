@@ -20,14 +20,14 @@ jobs:
       uses: actions/setup-java@v1	
       with:	
         java-version: 1.8	
-    - name: Current Time 2
-      uses: srfrnk/current-time@v1.1.0
+    - name: Get Time Action
+      uses: JantHsueh/get-time-action@1.0
       with:
-        # Time format to use using [MomemtJS syntax](https://momentjs.com/)
-        format: DDMM
+        # time zone
+        timeZone: 2
     - name: Use current time
       env:
-        TIME: "${{ steps.current-time.outputs.formattedTime }}"
+        TIME: "${{ steps.get-time-action.time }}"
       run: echo $TIME
     - name: Grant execute permission for gradlew	
       run: chmod +x gradlew	
