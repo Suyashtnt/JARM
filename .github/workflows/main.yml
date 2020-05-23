@@ -20,17 +20,18 @@ jobs:
       uses: actions/setup-java@v1	
       with:	
         java-version: 1.8	
-    - name: Get Current Time
-      uses: 1466587594/get-current-time@v1.0.0
+    - name: Current Time 2
+      uses: srfrnk/current-time@v1.1.0
       with:
-        # Time format to use using [MomemtJS format syntax](https://momentjs.com/docs/#/displaying/format/)
-        format: MM-DD
-
+        # Time format to use using [MomemtJS syntax](https://momentjs.com/)
+        format: DD-MM
+    - name: Use current time
+      run: echo ${{ steps.current-time.outputs.formattedTime }}
     - name: Create a Release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        TIME: "${{ steps.current-time.outputs.formattedTime }}"
+        TIME: "${{ steps.current-time.outputs.time }}"
       with:
         # The name of the tag. This should come from the webhook payload, `github.GITHUB_REF` when a user pushes a new tag
         tag_name: ${{ steps.current-time.outputs.formattedTime }}
