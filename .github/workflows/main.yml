@@ -25,7 +25,7 @@ jobs:
         java-version: 1.8	
     
     - name: Echo Build Number
-      run: echo $BUILD_NUMBER
+      run: echo ${{ steps.my-project-build-number.outputs.build-number }}
       env:
         BUILD_NUMBER: ${{ steps.my-project-build-number.outputs.build-number }}
           
