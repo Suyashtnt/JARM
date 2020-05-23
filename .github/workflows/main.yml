@@ -26,18 +26,9 @@ jobs:
         # Time format to use using [MomemtJS syntax](https://momentjs.com/)
         format: DDMM
     - name: Use current time
-      run: echo ${{ steps.current-time.outputs.formattedTime }} ${{ steps.current-time.outputs.time }}
-    - name: Create a Release
-      uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        TIME: "${{ steps.current-time.outputs.time }}"
-      with:
-        # The name of the tag. This should come from the webhook payload, `github.GITHUB_REF` when a user pushes a new tag
-        tag_name: ${{ env.TIME }}
-        # The name of the release. For example, `Release v1.0.1`
-        release_name:  Release test
-        prerelease: true
+        TIME: "${{ steps.current-time.outputs.formattedTime }}"
+      run: echo $TIME
     - name: Grant execute permission for gradlew	
       run: chmod +x gradlew	
     - name: Build with Gradle	
@@ -68,16 +59,10 @@ jobs:
         display_name: JARM
         game_versions: 1.15.2,Java 8,Forge
         release_type: alpha
-    - name: Upload a Release Asset
-      uses: actions/upload-release-asset@v1.0.2
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: Release.txt
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        # The URL for uploading assets to the release
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        # The path to the asset you want to upload
-        asset_path: build/libs/
-        # The name of the asset you want to upload
-        asset_name: ${{ steps.current-time.outputs.formattedTime }}+".jar"
-        # The content-type of the asset you want to upload. See the supported Media Types here: https://www.iana.org/assignments/media-types/media-types.xhtml for more information
-        asset_content_type: application/zip
