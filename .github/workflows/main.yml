@@ -69,6 +69,8 @@ jobs:
     - name: Create an Tag
       uses: simpleactions/create-tag@v1.0.0
       with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        sha: GITHUB_SHA
         tag: ${{ steps.my-project-build-number.outputs.build-number }}
         # The message
         message: Version ${{ steps.my-project-build-number.outputs.build-number }}
