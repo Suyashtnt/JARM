@@ -19,19 +19,7 @@ jobs:
       id: my-project-build-number
     - uses: actions/checkout@v2	
       
-    - name: Create a Release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        # The name of the tag. This should come from the webhook payload, `github.GITHUB_REF` when a user pushes a new tag
-        tag_name: ${{ steps.my-project-build-number.outputs.build-number }}
-        # The name of the release. For example, `Release v1.0.1`
-        release_name: version ${{ steps.my-project-build-number.outputs.build-number }}
-        # Text describing the contents of the tag.
-        body: creator still needs to make one
-        # `true` to identify the release as a prerelease. `false` to identify the release as a full release. Default: `false`
-        prerelease: true
+
         
     - name: Set up JDK 1.8	
       uses: actions/setup-java@v1	
@@ -78,14 +66,14 @@ jobs:
         game_versions: 1.15.2,Java 8,Forge
         release_type: alpha
         
-    - name: Upload Release Asset
-      id: upload-release-asset 
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: GH Release
+      uses: softprops/action-gh-release@v0.1.5
       with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: build/libs/
-        asset_name: JARM-${{ steps.my-project-build-number.outputs.build-number }}.jar
-        asset_content_type: application/zip
-
+        # Note-worthy description of changes in release
+        body: still need to make one :\\
+        # Gives the release a custom name. Defaults to tag name
+        name: ${{ steps.my-project-build-number.outputs.build-number }}
+        # Identify the release as a prerelease. Defaults to false
+        prerelease: true
+        # Newline-delimited list of path globs for asset files to upload
+        files: build/libs/JARM-${{ steps.my-project-build-number.outputs.build-number }}.jar
