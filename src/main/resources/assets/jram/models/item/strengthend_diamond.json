@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "jram:items/rubydiamond"
+    "layer0": "jram:items/rdiamond"
   }
 }
