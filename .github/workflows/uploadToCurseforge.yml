@@ -1,6 +1,6 @@
 on:
   repository_dispatch:
-    types: [upload]
+    types: [Upload]
     
 jobs:
   upload:
