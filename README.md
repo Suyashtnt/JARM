@@ -1,6 +1,8 @@
 # JARM
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Suyashtnt/JARM/Java%20CI%20with%20Gradle?style=for-the-badge)
 [![Actions Panel](https://img.shields.io/badge/actionspanel-enabled-brightgreen?style=for-the-badge)](https://www.actionspanel.app/app/Suyashtnt/JARM)
+[![java](https://img.shields.io/badge/made-with_java-red.svg?style=for-the-badge)](https://java.com)
+[![Generic badge](https://img.shields.io/badge/Made_With-MCreator-brightgreen?style=for-the-badge)](https://mcreator.net/about)
 
 Adds Ruby Stuff To Minecraft
 
@@ -8,7 +10,7 @@ Adds Ruby Stuff To Minecraft
 - make armor look more Modern minecraft
 - make the bow act like a proper bow
 
-Made with MCreator, https://mcreator.net/about
+
 
 how to build yourself:
 
@@ -21,3 +23,5 @@ how to build yourself:
 6. (optional) rename that to JARM.jar
 7. now put that file in your mods folder
 8. done! no extra dependencies
+
+Made with MCreator, https://mcreator.net/about
