@@ -1,4 +1,6 @@
 # JARM
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Suyashtnt/JARM/Java%20CI%20with%20Gradle?style=for-the-badge)
+
 Adds Ruby Stuff To Minecraft
 
 To-Do:
