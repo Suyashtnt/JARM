@@ -310,12 +310,48 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_diamond_recipe"
+    },
+    {
+      "name": "StrongRubySword",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strong_ruby_sword"
+    },
+    {
+      "name": "StrongRubySwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strong_ruby_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrongRubyPickaxe",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strong_ruby_pickaxe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.jram.strong_ruby_sword": "Strong Ruby Sword",
       "item.jram.ruby_tools_shovel": "RubyTools Shovel",
       "item.jram.ruby_armor_armorboots": "Ruby Boots",
       "itemGroup.tabjarm_creative_tab": "JARM",
@@ -339,6 +375,7 @@
       "item.jram.ruby_armor_armorhelmet": "Ruby Helmet",
       "advancements.that_arrow_is_stong.title": "That Arrow Is Stong!",
       "item.jram.strengthend_diamond": "Strengthend Diamond",
+      "item.jram.strong_ruby_pickaxe": "Strong Ruby Pickaxe",
       "block.jram.block_of_ruby": "Block Of Ruby"
     }
   },
