@@ -8,7 +8,7 @@
     "name": "Ruby Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:JARMCreativeTab"
     },
     "toolType": "Axe",
     "harvestLevel": 3,

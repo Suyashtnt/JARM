@@ -23,7 +23,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -43,6 +42,7 @@ import java.util.Random;
 import java.util.List;
 
 import com.tntmaninc.jram.procedures.RubyEnforcedBowBulletHitsLivingEntityProcedure;
+import com.tntmaninc.jram.itemgroup.JARMCreativeTabItemGroup;
 import com.tntmaninc.jram.JramModElements;
 
 @JramModElements.ModElement.Tag
@@ -71,7 +71,7 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(600));
+			super(new Item.Properties().group(JARMCreativeTabItemGroup.tab).maxDamage(600));
 			setRegistryName("ruby_enforced_bow");
 		}
 
@@ -99,8 +99,7 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 		}
 
 		@Override
-		public void onUsingTick(ItemStack itemstack, LivingEntity entityLiving, int count) {
-			World world = entityLiving.world;
+		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entityLiving, int timeLeft) {
 			if (!world.isRemote && entityLiving instanceof ServerPlayerEntity) {
 				ServerPlayerEntity entity = (ServerPlayerEntity) entityLiving;
 				int slotID = -1;
@@ -132,7 +131,6 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 						}
 					}
 				}
-				entity.stopActiveHand();
 			}
 		}
 	}

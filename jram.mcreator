@@ -230,6 +230,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_armor_armor_boots_recipe"
+    },
+    {
+      "name": "JARMCreativeTab",
+      "type": "tab",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jarm_creative_tab"
     }
   ],
   "variable_elements": [],
@@ -238,6 +247,7 @@
     "en_us": {
       "item.jram.ruby_tools_shovel": "RubyTools Shovel",
       "item.jram.ruby_armor_armorboots": "Ruby Boots",
+      "itemGroup.tabjarm_creative_tab": "JARM",
       "advancements.almost_like_diamond.title": "Almost Like Diamond",
       "item.jram.ruby_armor_armorlegs": "Ruby Leggings",
       "item.jram.ruby_tools_axe": "Ruby Axe",

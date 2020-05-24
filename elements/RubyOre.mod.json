@@ -26,7 +26,7 @@
     "resistance": 3.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:JARMCreativeTab"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

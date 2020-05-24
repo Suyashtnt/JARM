@@ -8,7 +8,7 @@
     "name": "Ruby Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:JARMCreativeTab"
     },
     "toolType": "Hoe",
     "harvestLevel": 3,
