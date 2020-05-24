@@ -1,7 +1,7 @@
 # JARM
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Suyashtnt/JARM/Java%20CI%20with%20Gradle?style=for-the-badge)
 [![Actions Panel](https://img.shields.io/badge/actionspanel-enabled-brightgreen?style=for-the-badge)](https://www.actionspanel.app/app/Suyashtnt/JARM)
-[![java](https://img.shields.io/badge/made-with_java-red.svg?style=for-the-badge)](https://java.com)
+[![java](https://img.shields.io/badge/uses-java-red.svg?style=for-the-badge)](https://java.com)
 [![Generic badge](https://img.shields.io/badge/Made_With-MCreator-brightgreen?style=for-the-badge)](https://mcreator.net/about)
 
 Adds Ruby Stuff To Minecraft
