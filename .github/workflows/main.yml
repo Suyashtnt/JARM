@@ -51,7 +51,6 @@ jobs:
         name: JARM-${{ steps.my-project-build-number.outputs.build-number }}.jar
         # A file, directory or wildcard pattern that describes what to upload	
         path: build/libs/JARM-${{ steps.my-project-build-number.outputs.build-number }}.jar
-        
     - name: Upload to curseforge
       env:
         TIME: ${{ steps.current-time.outputs.time }}
@@ -65,5 +64,6 @@ jobs:
         display_name: JARM-0.0.${{ steps.my-project-build-number.outputs.build-number }}
         game_versions: 1.15.2,Java 8,Forge
         release_type: alpha
+
 
 
