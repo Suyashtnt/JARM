@@ -89,8 +89,8 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("Auto creates alpha arrows"));
-			list.add(new StringTextComponent("its almost like a gun"));
+			list.add(new StringTextComponent("No draw time"));
+			list.add(new StringTextComponent("and alot more powerful"));
 		}
 
 		@Override
@@ -112,7 +112,7 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 					}
 				}
 				if (entity.abilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0 || slotID != -1) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 2f, 9, 7);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1.4f, 5, 5);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					if (entity.abilities.isCreativeMode) {
 						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;

@@ -7,8 +7,8 @@
     "customModelName": "Normal",
     "name": "Ruby Enforced Bow",
     "specialInfo": [
-      "Auto creates alpha arrows",
-      "its almost like a gun"
+      "No draw time",
+      "and alot more powerful"
     ],
     "creativeTab": {
       "value": "COMBAT"
@@ -25,9 +25,9 @@
     "hasGlow": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 2.0,
-    "bulletDamage": 9.0,
-    "bulletKnockback": 7,
+    "bulletPower": 1.4,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
     "bulletParticles": false,
     "bulletIgnitesFire": true,
     "bulletItemTexture": {
