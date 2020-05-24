@@ -4,7 +4,7 @@
 
 Adds Ruby Stuff To Minecraft
 
-[To-Do](#to-do):
+# [To-Do](#to-do):
 - make armor look more Modern minecraft
 - make the bow act like a proper bow
 
@@ -12,7 +12,7 @@ Made with MCreator, https://mcreator.net/about
 
 how to build yourself:
 
-[**windows**](#windows-build)
+# [**windows**](#windows-build)
 1. first get the JDK from oracle's website
 2. clone/download the source code
 3. open command promt and go to where you downloaded the code
