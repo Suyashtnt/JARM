@@ -57,7 +57,7 @@ jobs:
         project_id: 385265		
         game_endpoint: minecraft		
         file_path: build/libs/JARM-${{ steps.my-project-build-number.outputs.build-number }}.jar		
-        changelog: updated mod, changelog on github		
+        changelog: Creator still needs to make one :\	
         display_name: JARM-build-${{ steps.my-project-build-number.outputs.build-number }}		
         game_versions: 1.15.2,Java 8,Forge		
         release_type: alpha	
