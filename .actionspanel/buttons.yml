@@ -2,6 +2,4 @@ buttons:
   - title: Create build
     action: "run_tests"
     description: Run your tests
-  - title: Upload to Curseforge
-    action: "Upload"
-    description: Run your tests
+
