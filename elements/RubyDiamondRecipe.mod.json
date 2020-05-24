@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:StrengthendDiamond"
+        "value": ""
       },
       {
         "value": "CUSTOM:Ruby"
       },
       {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:BlockOfRuby"
+        "value": ""
       },
       {
         "value": "CUSTOM:Ruby"
       },
       {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "Items.BOW"
+        "value": "Items.DIAMOND"
       },
       {
         "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:RubyEnforcedBow"
+      "value": "CUSTOM:StrengthendDiamond"
     },
-    "name": "ruby_bow_recipe",
+    "name": "ruby_diamond_recipe",
     "namespace": "mod"
   }
 }
