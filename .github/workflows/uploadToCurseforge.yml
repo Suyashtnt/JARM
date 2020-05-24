@@ -6,4 +6,29 @@ jobs:
   upload:
     name: upload to curseforge
     runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: Download artifact
+      uses: dawidd6/action-download-artifact@v2
+      with:
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        workflow: main.yml
+        name: JARM
+        path: build/libs
+        # Optional, defaults to current repo
+        repo: ${{github.repository}}
+        
+    - name: Upload to curseforge		
+      uses: itsmeow/curseforge-upload@master		
+      with:		
+        token: ${{ secrets.CF_API_KEY }}		
+        project_id: 385265		
+        game_endpoint: minecraft		
+        file_path: build/libs/JARM-${{ steps.my-project-build-number.outputs.build-number }}.jar		
+        changelog: updated mod, changelog on github		
+        display_name: JARM-0.0.${{ steps.my-project-build-number.outputs.build-number }}		
+        game_versions: 1.15.2,Java 8,Forge		
+        release_type: alpha	
+
     
