@@ -8,7 +8,7 @@
     "name": "Ruby Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:JARMCreativeTab"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 3,

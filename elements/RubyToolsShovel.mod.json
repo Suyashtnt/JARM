@@ -8,7 +8,7 @@
     "name": "RubyTools Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:JARMCreativeTab"
     },
     "toolType": "Spade",
     "harvestLevel": 3,
