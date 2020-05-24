@@ -239,6 +239,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "jarm_creative_tab"
+    },
+    {
+      "name": "RubyGuardian",
+      "type": "mob",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_guardian"
+    },
+    {
+      "name": "RubyBiome",
+      "type": "biome",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_biome"
+    },
+    {
+      "name": "RubyBiomeRubyOre",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_biome_ruby_ore"
     }
   ],
   "variable_elements": [],
@@ -251,16 +278,19 @@
       "advancements.almost_like_diamond.title": "Almost Like Diamond",
       "item.jram.ruby_armor_armorlegs": "Ruby Leggings",
       "item.jram.ruby_tools_axe": "Ruby Axe",
+      "entity.jram.ruby_guardian": "Ruby Guardian",
       "item.jram.ruby_tools_sword": "Ruby Sword",
       "item.jram.ruby": "Ruby",
       "item.jram.ruby_armor_armorbody": "Ruby Chestplate",
       "advancements.that_arrow_is_stong.descr": "Shoot a mob with a ruby arrow",
       "advancements.almost_like_diamond.descr": "Get your first ruby",
+      "item.jram.ruby_guardian": "Ruby Guardian Spawn Egg",
       "item.jram.ruby_armor_armorhelmet": "Ruby Helmet",
       "item.jram.ruby_tools_pickaxe": "Ruby Pickaxe",
       "advancements.that_arrow_is_stong.title": "That Arrow Is Stong!",
       "item.jram.ruby_tools_hoe": "Ruby Hoe",
       "item.jram.ruby_enforced_bow": "Ruby Enforced Bow",
+      "block.jram.ruby_biome_ruby_ore": "Special Ruby Ore",
       "block.jram.block_of_ruby": "Block Of Ruby",
       "block.jram.ruby_ore": "Ruby Ore"
     }
