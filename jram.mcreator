@@ -266,6 +266,50 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_biome_ruby_ore"
+    },
+    {
+      "name": "StrengthendDiamond",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strengthend_diamond"
+    },
+    {
+      "name": "StrongerThanDiamond",
+      "type": "achievement",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stronger_than_diamond"
+    },
+    {
+      "name": "StrengthendDiamondItemIsCraftedsmelted",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strengthend_diamond_item_is_craftedsmelted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RubyDiamondRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_diamond_recipe"
     }
   ],
   "variable_elements": [],
@@ -275,24 +319,27 @@
       "item.jram.ruby_tools_shovel": "RubyTools Shovel",
       "item.jram.ruby_armor_armorboots": "Ruby Boots",
       "itemGroup.tabjarm_creative_tab": "JARM",
-      "advancements.almost_like_diamond.title": "Almost Like Diamond",
       "item.jram.ruby_armor_armorlegs": "Ruby Leggings",
-      "item.jram.ruby_tools_axe": "Ruby Axe",
       "entity.jram.ruby_guardian": "Ruby Guardian",
       "item.jram.ruby_tools_sword": "Ruby Sword",
-      "item.jram.ruby": "Ruby",
       "item.jram.ruby_armor_armorbody": "Ruby Chestplate",
+      "item.jram.ruby_tools_pickaxe": "Ruby Pickaxe",
+      "item.jram.ruby_tools_hoe": "Ruby Hoe",
+      "advancements.stronger_than_diamond.title": "Stronger Than Diamond",
+      "advancements.stronger_than_diamond.descr": "Craft a Strenghtend Diamond",
+      "item.jram.ruby_enforced_bow": "Ruby Enforced Bow",
+      "block.jram.ruby_biome_ruby_ore": "Dense Ruby Ore",
+      "block.jram.ruby_ore": "Ruby Ore",
+      "advancements.almost_like_diamond.title": "Almost Like Diamond",
+      "item.jram.ruby_tools_axe": "Ruby Axe",
+      "item.jram.ruby": "Ruby",
       "advancements.that_arrow_is_stong.descr": "Shoot a mob with a ruby arrow",
       "advancements.almost_like_diamond.descr": "Get your first ruby",
       "item.jram.ruby_guardian": "Ruby Guardian Spawn Egg",
       "item.jram.ruby_armor_armorhelmet": "Ruby Helmet",
-      "item.jram.ruby_tools_pickaxe": "Ruby Pickaxe",
       "advancements.that_arrow_is_stong.title": "That Arrow Is Stong!",
-      "item.jram.ruby_tools_hoe": "Ruby Hoe",
-      "item.jram.ruby_enforced_bow": "Ruby Enforced Bow",
-      "block.jram.ruby_biome_ruby_ore": "Dense Ruby Ore",
-      "block.jram.block_of_ruby": "Block Of Ruby",
-      "block.jram.ruby_ore": "Ruby Ore"
+      "item.jram.strengthend_diamond": "Strengthend Diamond",
+      "block.jram.block_of_ruby": "Block Of Ruby"
     }
   },
   "workspaceSettings": {

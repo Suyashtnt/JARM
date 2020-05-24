@@ -2,41 +2,29 @@
   "group": "jram",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
+    " 1 ",
     "345",
-    "678"
+    " 7 "
   ],
   "key": {
-    "0": {
-      "item": "jram:ruby"
-    },
     "1": {
-      "item": "jram:strengthend_diamond"
-    },
-    "2": {
       "item": "jram:ruby"
     },
     "3": {
       "item": "jram:ruby"
     },
     "4": {
-      "item": "jram:block_of_ruby"
+      "item": "minecraft:diamond"
     },
     "5": {
       "item": "jram:ruby"
     },
-    "6": {
-      "item": "jram:ruby"
-    },
     "7": {
-      "item": "minecraft:bow"
-    },
-    "8": {
       "item": "jram:ruby"
     }
   },
   "result": {
-    "item": "jram:ruby_enforced_bow",
+    "item": "jram:strengthend_diamond",
     "count": 1
   }
 }
