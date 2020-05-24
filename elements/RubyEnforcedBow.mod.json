@@ -11,13 +11,13 @@
       "its almost like a gun"
     ],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:JARMCreativeTab"
     },
     "stackSize": 1,
     "ammoItem": {
       "value": "Items.ARROW"
     },
-    "shootConstantly": true,
+    "shootConstantly": false,
     "usageCount": 600,
     "actionSound": {
       "value": "item.crossbow.shoot"
