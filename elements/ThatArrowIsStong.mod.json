@@ -2,7 +2,7 @@
   "_fv": 8,
   "_type": "achievement",
   "definition": {
-    "achievementName": "That Nugget Is Stong!",
+    "achievementName": "That Shard Is Stong!",
     "achievementDescription": "Shoot a mob with a ruby arrow",
     "achievementIcon": {
       "value": "CUSTOM:RubyEnforcedBow"

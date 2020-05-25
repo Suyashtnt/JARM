@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Ruby Shard",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:JARMCreativeTab"
     },
     "stackSize": 64,
     "enchantability": 0,
