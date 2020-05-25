@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ruby_nugget",
+    "texture": "rubyingot_ingot",
     "customModelName": "Normal",
-    "name": "Ruby Shard",
+    "name": "RubyIngot",
     "creativeTab": {
-      "value": "CUSTOM:JARMCreativeTab"
+      "value": "MISC"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -18,15 +18,10 @@
     "stayInGridWhenCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "seems to have weakening properties"
-    ],
+    "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "onItemInUseTick": {
-      "name": "RubyNuggetItemInHandTick"
-    }
+    "inventoryStackSize": 64
   }
 }

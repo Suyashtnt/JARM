@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "jram:blocks/rubyingot_ore_block",
+    "particle": "jram:blocks/rubyingot_ore_block"
+  }
+}
