@@ -244,7 +244,7 @@
       "name": "RubyGuardian",
       "type": "mob",
       "sortid": 25,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_guardian"
@@ -315,11 +315,7 @@
       "name": "StrongRubySword",
       "type": "tool",
       "sortid": 31,
-<<<<<<< Updated upstream
       "compiles": false,
-=======
-      "compiles": true,
->>>>>>> Stashed changes
       "locked_code": false,
       "ids": {},
       "registry_name": "strong_ruby_sword"
@@ -345,13 +341,7 @@
       "name": "StrongRubyPickaxe",
       "type": "tool",
       "sortid": 33,
-<<<<<<< Updated upstream
       "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "strong_ruby_pickaxe"
-=======
-      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "strong_ruby_pickaxe"
@@ -373,7 +363,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_dimension"
->>>>>>> Stashed changes
+    },
+    {
+      "name": "StrongdiamondBlockRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strongdiamond_block_recipe"
+    },
+    {
+      "name": "FlintAndRubyRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flint_and_ruby_recipe"
     }
   ],
   "variable_elements": [],

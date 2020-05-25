@@ -8,17 +8,17 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 import com.tntmaninc.jram.world.dimension.RubyDimensionDimension;
+import com.tntmaninc.jram.itemgroup.JARMCreativeTabItemGroup;
 
 public class RubyDimensionItem extends Item {
 	@ObjectHolder("jram:ruby_dimension")
 	public static final Item block = null;
 	public RubyDimensionItem() {
-		super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(64));
+		super(new Item.Properties().group(JARMCreativeTabItemGroup.tab).maxDamage(64));
 	}
 
 	@Override
