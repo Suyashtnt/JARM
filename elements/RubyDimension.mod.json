@@ -42,6 +42,9 @@
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": false,
-    "imitateOverworldBehaviour": true
+    "imitateOverworldBehaviour": true,
+    "whenPortaTriggerlUsed": {
+      "name": "RubyDimensionPortalTriggerUsed"
+    }
   }
 }

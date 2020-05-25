@@ -21,6 +21,7 @@
   "block.jram.ruby_biome_ruby_ore": "Dense Ruby Ore",
   "block.jram.ruby_ore": "Ruby Ore",
   "advancements.almost_like_diamond.title": "Almost Like Diamond",
+  "block.jram.ruby_fire": "Ruby Fire",
   "item.jram.ruby_tools_axe": "Ruby Axe",
   "item.jram.strengthend_armor_armorboots": "StrengthendArmor Boots",
   "item.jram.ruby": "Ruby",
@@ -28,8 +29,12 @@
   "advancements.almost_like_diamond.descr": "Get your first ruby",
   "item.jram.ruby_guardian": "Ruby Guardian Spawn Egg",
   "item.jram.ruby_armor_armorhelmet": "Ruby Helmet",
+<<<<<<< Updated upstream
   "advancements.that_arrow_is_stong.title": "That Nugget Is Stong!",
   "item.jram.strengthend_armor_armorbody": "StrengthendArmor Chestplate",
+=======
+  "advancements.that_arrow_is_stong.title": "That Shard Is Stong!",
+>>>>>>> Stashed changes
   "item.jram.strengthend_diamond": "Strengthend Diamond",
   "item.jram.strong_ruby_pickaxe": "Strong Ruby Pickaxe",
   "item.jram.strengthend_armor_armorhelmet": "StrengthendArmor Helmet",

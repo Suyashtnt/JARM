@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 import com.tntmaninc.jram.world.dimension.RubyDimensionDimension;
+import com.tntmaninc.jram.procedures.RubyDimensionPortalTriggerUsedProcedure;
 import com.tntmaninc.jram.itemgroup.JARMCreativeTabItemGroup;
 
 public class RubyDimensionItem extends Item {
@@ -32,6 +33,18 @@ public class RubyDimensionItem extends Item {
 		} else {
 			if (world.isAirBlock(pos))
 				RubyDimensionDimension.portal.portalSpawn(world, pos);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("itemstack", itemstack);
+				$_dependencies.put("world", world);
+				RubyDimensionPortalTriggerUsedProcedure.executeProcedure($_dependencies);
+			}
 			itemstack.damageItem(1, entity, c -> c.sendBreakAnimation(context.getHand()));
 			return ActionResultType.SUCCESS;
 		}
