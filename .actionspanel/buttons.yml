@@ -1,5 +1,8 @@
 buttons:
   - title: Create build
     action: "run_tests"
-    description: Run your tests
+    description: Create a build
+  - title: Create test build
+    action: "Create-Test"
+    description: Create a test build
 
