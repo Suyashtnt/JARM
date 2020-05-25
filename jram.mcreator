@@ -563,6 +563,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "strengthend_armor_armor_boots_recipe"
+    },
+    {
+      "name": "RubyToolkit",
+      "type": "item",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_toolkit"
+    },
+    {
+      "name": "RubyToolspackGUI",
+      "type": "gui",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_toolspack_gui"
+    },
+    {
+      "name": "RubyToolkitRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_toolkit_recipe"
     }
   ],
   "variable_elements": [],
@@ -592,6 +619,7 @@
       "advancements.almost_like_diamond.title": "Almost Like Diamond",
       "item.jram.ruby_tools_axe": "Ruby Axe",
       "item.jram.strengthend_armor_armorboots": "StrengthendArmor Boots",
+      "item.jram.ruby_toolkit": "Ruby Toolkit",
       "item.jram.ruby": "Ruby",
       "advancements.that_arrow_is_stong.descr": "Shoot a mob with a ruby arrow",
       "advancements.almost_like_diamond.descr": "Get your first ruby",
