@@ -394,6 +394,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_nugget"
+    },
+    {
+      "name": "RubyNuggetRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_nugget_recipe"
+    },
+    {
+      "name": "RubyNuggetToIngotRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_nugget_to_ingot_recipe"
     }
   ],
   "variable_elements": [],
@@ -407,7 +425,7 @@
       "item.jram.ruby_armor_armorlegs": "Ruby Leggings",
       "entity.jram.ruby_guardian": "Ruby Guardian",
       "item.jram.ruby_tools_sword": "Ruby Sword",
-      "item.jram.ruby_nugget": "Ruby Nugget",
+      "item.jram.ruby_nugget": "Ruby Shard",
       "block.jram.strong_diamond_block": "Strong Diamond Block",
       "item.jram.ruby_armor_armorbody": "Ruby Chestplate",
       "item.jram.ruby_tools_pickaxe": "Ruby Pickaxe",
