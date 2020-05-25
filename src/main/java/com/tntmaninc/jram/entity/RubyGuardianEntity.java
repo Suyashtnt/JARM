@@ -21,7 +21,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.monster.SkeletonEntity;
+import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
@@ -37,6 +37,7 @@ import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
+import com.tntmaninc.jram.procedures.RubyGuardianDropsEntityDiesProcedure;
 import com.tntmaninc.jram.itemgroup.JARMCreativeTabItemGroup;
 import com.tntmaninc.jram.item.StrongRubySwordItem;
 import com.tntmaninc.jram.item.RubyArmorArmorItem;
@@ -88,7 +89,7 @@ public class RubyGuardianEntity extends JramModElements.ModElement {
 			return customRender;
 		});
 	}
-	public static class CustomEntity extends SkeletonEntity {
+	public static class CustomEntity extends ZombieEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -141,6 +142,24 @@ public class RubyGuardianEntity extends JramModElements.ModElement {
 		@Override
 		protected float getSoundVolume() {
 			return 1.0F;
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			int x = (int) this.getPosX();
+			int y = (int) this.getPosY();
+			int z = (int) this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				RubyGuardianDropsEntityDiesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
