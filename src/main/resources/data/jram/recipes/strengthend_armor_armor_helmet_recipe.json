@@ -1,0 +1,29 @@
+{
+  "group": "jram",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "jram:strengthend_diamond"
+    },
+    "1": {
+      "item": "jram:strengthend_diamond"
+    },
+    "2": {
+      "item": "jram:strengthend_diamond"
+    },
+    "3": {
+      "item": "jram:strengthend_diamond"
+    },
+    "5": {
+      "item": "jram:strengthend_diamond"
+    }
+  },
+  "result": {
+    "item": "jram:strengthend_armor_armorhelmet",
+    "count": 1
+  }
+}

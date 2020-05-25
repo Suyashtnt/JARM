@@ -27,7 +27,7 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "CUSTOM:StrongRubySword"
+      "value": "CUSTOM:RubyToolsSword"
     },
     "equipmentOffHand": {
       "value": ""
@@ -101,15 +101,15 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningProbability": 9,
     "mobSpawningType": "creature",
-    "minNumberOfMobsPerGroup": 3,
-    "maxNumberOfMobsPerGroup": 30,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 5,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:RubyBiome"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": true
   }
 }

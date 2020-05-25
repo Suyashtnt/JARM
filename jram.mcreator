@@ -429,6 +429,140 @@
           }
         ]
       }
+    },
+    {
+      "name": "RubyIngotOreBlock",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_ingot_ore_block"
+    },
+    {
+      "name": "RubyIngotIngot",
+      "type": "item",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_ingot_ingot"
+    },
+    {
+      "name": "RubyIngotOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_ingot_ore_block_recipe"
+    },
+    {
+      "name": "RubyIngotBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_ingot_block_ore_recipe"
+    },
+    {
+      "name": "RubyIngot",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_ingot"
+    },
+    {
+      "name": "StrongDiamond",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strong_diamond"
+    },
+    {
+      "name": "RubyGuardianDropsEntityDies",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_guardian_drops_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrengthendArmorArmor",
+      "type": "armor",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strengthend_armor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "StrengthendArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strengthend_armor_armor_helmet_recipe"
+    },
+    {
+      "name": "StrengthendArmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strengthend_armor_armor_body_recipe"
+    },
+    {
+      "name": "StrengthendArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strengthend_armor_armor_leggings_recipe"
+    },
+    {
+      "name": "StrengthendArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strengthend_armor_armor_boots_recipe"
     }
   ],
   "variable_elements": [],
@@ -445,6 +579,8 @@
       "item.jram.ruby_nugget": "Ruby Shard",
       "block.jram.strong_diamond_block": "Strong Diamond Block",
       "item.jram.ruby_armor_armorbody": "Ruby Chestplate",
+      "block.jram.ruby_ingot_ore_block": "Block of RubyIngot",
+      "item.jram.strengthend_armor_armorlegs": "StrengthendArmor Leggings",
       "item.jram.ruby_tools_pickaxe": "Ruby Pickaxe",
       "item.jram.ruby_tools_hoe": "Ruby Hoe",
       "advancements.stronger_than_diamond.title": "Stronger Than Diamond",
@@ -455,6 +591,7 @@
       "block.jram.ruby_ore": "Ruby Ore",
       "advancements.almost_like_diamond.title": "Almost Like Diamond",
       "item.jram.ruby_tools_axe": "Ruby Axe",
+      "item.jram.strengthend_armor_armorboots": "StrengthendArmor Boots",
       "item.jram.ruby": "Ruby",
       "advancements.that_arrow_is_stong.descr": "Shoot a mob with a ruby arrow",
       "advancements.almost_like_diamond.descr": "Get your first ruby",
@@ -463,6 +600,7 @@
       "advancements.that_arrow_is_stong.title": "That Shard Is Stong!",
       "item.jram.strengthend_diamond": "Strengthend Diamond",
       "item.jram.strong_ruby_pickaxe": "Strong Ruby Pickaxe",
+      "item.jram.strengthend_armor_armorhelmet": "StrengthendArmor Helmet",
       "block.jram.block_of_ruby": "Block Of Ruby"
     }
   },

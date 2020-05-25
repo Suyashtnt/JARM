@@ -4,8 +4,8 @@ import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
 
+import com.tntmaninc.jram.item.StrengthendDiamondItem;
 import com.tntmaninc.jram.item.RubyNuggetItem;
-import com.tntmaninc.jram.item.RubyIngotIngotItem;
 import com.tntmaninc.jram.JramModElements;
 
 @JramModElements.ModElement.Tag
@@ -35,9 +35,9 @@ public class RubyGuardianDropsEntityDiesProcedure extends JramModElements.ModEle
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if ((Math.random() < 0.5)) {
+		if ((Math.random() < 0.1)) {
 			if (!world.isRemote) {
-				ItemEntity entityToSpawn = new ItemEntity(world, x, y, z, new ItemStack(RubyIngotIngotItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity(world, x, y, z, new ItemStack(StrengthendDiamondItem.block, (int) (1)));
 				entityToSpawn.setPickupDelay(10);
 				world.addEntity(entityToSpawn);
 			}

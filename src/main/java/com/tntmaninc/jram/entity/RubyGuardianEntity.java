@@ -7,6 +7,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.common.DungeonHooks;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
@@ -39,7 +40,7 @@ import net.minecraft.client.renderer.entity.BipedRenderer;
 
 import com.tntmaninc.jram.procedures.RubyGuardianDropsEntityDiesProcedure;
 import com.tntmaninc.jram.itemgroup.JARMCreativeTabItemGroup;
-import com.tntmaninc.jram.item.StrongRubySwordItem;
+import com.tntmaninc.jram.item.RubyToolsSwordItem;
 import com.tntmaninc.jram.item.RubyArmorArmorItem;
 import com.tntmaninc.jram.JramModElements;
 
@@ -69,10 +70,11 @@ public class RubyGuardianEntity extends JramModElements.ModElement {
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
-			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 20, 3, 30));
+			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 9, 1, 5));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				AnimalEntity::canAnimalSpawn);
+		DungeonHooks.addDungeonMob(entity, 180);
 	}
 
 	@SubscribeEvent
@@ -98,7 +100,7 @@ public class RubyGuardianEntity extends JramModElements.ModElement {
 			super(type, world);
 			experienceValue = 7;
 			setNoAI(false);
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(StrongRubySwordItem.block, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(RubyToolsSwordItem.block, (int) (1)));
 			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(RubyArmorArmorItem.helmet, (int) (1)));
 			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(RubyArmorArmorItem.body, (int) (1)));
 			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(RubyArmorArmorItem.legs, (int) (1)));
