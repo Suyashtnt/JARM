@@ -7,8 +7,8 @@
     "customModelName": "Normal",
     "name": "Ruby Enforced Bow",
     "specialInfo": [
-      "No draw time",
-      "and alot more powerful"
+      "shoots ruby nugget",
+      "at very high speeds"
     ],
     "creativeTab": {
       "value": "CUSTOM:JARMCreativeTab"
@@ -25,13 +25,13 @@
     "hasGlow": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 1.4,
+    "bulletPower": 3.0,
     "bulletDamage": 5.0,
     "bulletKnockback": 5,
     "bulletParticles": false,
     "bulletIgnitesFire": true,
     "bulletItemTexture": {
-      "value": "Items.ARROW"
+      "value": "CUSTOM:RubyNugget"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",

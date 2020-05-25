@@ -89,8 +89,8 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("No draw time"));
-			list.add(new StringTextComponent("and alot more powerful"));
+			list.add(new StringTextComponent("shoots ruby nugget"));
+			list.add(new StringTextComponent("at very high speeds"));
 		}
 
 		@Override
@@ -111,7 +111,7 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 					}
 				}
 				if (entity.abilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0 || slotID != -1) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1.4f, 5, 5);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 3f, 5, 5);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					if (entity.abilities.isCreativeMode) {
 						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
@@ -161,7 +161,7 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(Items.ARROW, (int) (1));
+			return new ItemStack(RubyNuggetItem.block, (int) (1));
 		}
 
 		@Override
@@ -180,6 +180,7 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 			World world = this.world;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("sourceentity", sourceentity);
 				RubyEnforcedBowBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
 			}

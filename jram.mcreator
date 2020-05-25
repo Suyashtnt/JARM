@@ -75,6 +75,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -381,6 +385,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "flint_and_ruby_recipe"
+    },
+    {
+      "name": "RubyNugget",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_nugget"
     }
   ],
   "variable_elements": [],
@@ -394,6 +407,7 @@
       "item.jram.ruby_armor_armorlegs": "Ruby Leggings",
       "entity.jram.ruby_guardian": "Ruby Guardian",
       "item.jram.ruby_tools_sword": "Ruby Sword",
+      "item.jram.ruby_nugget": "Ruby Nugget",
       "block.jram.strong_diamond_block": "Strong Diamond Block",
       "item.jram.ruby_armor_armorbody": "Ruby Chestplate",
       "item.jram.ruby_tools_pickaxe": "Ruby Pickaxe",
