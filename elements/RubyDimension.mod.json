@@ -14,7 +14,7 @@
     },
     "igniterName": "Ruby Dimension Portal Igniter",
     "igniterTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:JARMCreativeTab"
     },
     "texture": "flintandruby",
     "portalTexture": "ruby_portal",
