@@ -20,8 +20,8 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.monster.SkeletonEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
@@ -38,6 +38,7 @@ import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
 import com.tntmaninc.jram.itemgroup.JARMCreativeTabItemGroup;
+import com.tntmaninc.jram.item.StrongRubySwordItem;
 import com.tntmaninc.jram.item.RubyArmorArmorItem;
 import com.tntmaninc.jram.JramModElements;
 
@@ -51,7 +52,7 @@ public class RubyGuardianEntity extends JramModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
+		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("ruby_guardian")
 						.setRegistryName("ruby_guardian");
 		elements.entities.add(() -> entity);
@@ -67,10 +68,10 @@ public class RubyGuardianEntity extends JramModElements.ModElement {
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
-			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 20, 3, 30));
+			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 20, 3, 30));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				AnimalEntity::canAnimalSpawn);
+				MonsterEntity::canMonsterSpawn);
 	}
 
 	@SubscribeEvent
@@ -146,7 +147,7 @@ public class RubyGuardianEntity extends JramModElements.ModElement {
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
-				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
+				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.32);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)

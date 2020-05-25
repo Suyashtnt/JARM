@@ -244,7 +244,7 @@
       "name": "RubyGuardian",
       "type": "mob",
       "sortid": 25,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_guardian"
@@ -315,7 +315,7 @@
       "name": "StrongRubySword",
       "type": "tool",
       "sortid": 31,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "strong_ruby_sword"
@@ -341,7 +341,7 @@
       "name": "StrongRubyPickaxe",
       "type": "tool",
       "sortid": 33,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "strong_ruby_pickaxe"

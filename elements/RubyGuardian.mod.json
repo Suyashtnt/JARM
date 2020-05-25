@@ -47,7 +47,7 @@
     "mobBehaviourType": "Mob",
     "mobCreatureType": "ILLAGER",
     "attackStrength": 3,
-    "movementSpeed": 0.3,
+    "movementSpeed": 0.32,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "health": 10,
@@ -99,7 +99,7 @@
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
-    "mobSpawningType": "creature",
+    "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 3,
     "maxNumberOfMobsPerGroup": 30,
     "restrictionBiomes": [
