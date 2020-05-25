@@ -390,7 +390,7 @@
       "name": "RubyNugget",
       "type": "item",
       "sortid": 38,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_nugget"
