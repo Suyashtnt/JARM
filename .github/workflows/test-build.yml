@@ -1,0 +1,50 @@
+# This workflow will build a Java project with Gradle	
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle	
+
+name: Java CI with Gradle	
+
+on:
+  push:
+    branches: 
+      - master
+  repository_dispatch:
+    types: [Test-Build]
+
+jobs:	
+  build:	
+
+    runs-on: ubuntu-latest	
+
+    steps:	
+    - uses: actions/checkout@v2	
+      
+
+        
+    - name: Set up JDK 1.8	
+      uses: actions/setup-java@v1	
+      with:	
+        java-version: 1.8	
+    
+
+          
+    - name: Grant execute permission for gradlew	
+      run: chmod +x gradlew	
+      
+    - name: Build with Gradle	
+      run: ./gradlew build
+      
+    - name: rename file
+      run: mv build/libs/modid-1.0.jar build/libs/JARM-test.jar
+      
+    - name: Upload a Build Artifact	
+      uses: actions/upload-artifact@v2.0.1
+      env:
+        TIME: ${{ steps.current-time.outputs.time }}
+      with:	
+        # Artifact name	
+        name: JARM
+        # A file, directory or wildcard pattern that describes what to upload	
+        path: build/libs/JARM-test.jar
+        
+
+

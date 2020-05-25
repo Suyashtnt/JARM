@@ -1,0 +1,9 @@
+{
+  "group": "jram",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "jram:block_of_ruby"
+  },
+  "result": "jram:ruby_ingot_ingot"
+}
