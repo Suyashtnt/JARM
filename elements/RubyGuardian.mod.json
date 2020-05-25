@@ -27,7 +27,7 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "CUSTOM:RubyToolsSword"
+      "value": "CUSTOM:StrongRubySword"
     },
     "equipmentOffHand": {
       "value": ""
@@ -45,7 +45,7 @@
       "value": "CUSTOM:RubyArmorArmor.boots"
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEFINED",
+    "mobCreatureType": "ILLAGER",
     "attackStrength": 3,
     "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
@@ -87,7 +87,7 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasAI": true,
-    "aiBase": "(none)",
+    "aiBase": "Skeleton",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"/></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "breedTriggerItems": [],
