@@ -18,10 +18,15 @@
     "stayInGridWhenCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "seems to have weakening properties"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "onItemInUseTick": {
+      "name": "RubyNuggetItemInHandTick"
+    }
   }
 }

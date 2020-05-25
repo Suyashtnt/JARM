@@ -412,6 +412,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_nugget_to_ingot_recipe"
+    },
+    {
+      "name": "RubyNuggetItemInHandTick",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_nugget_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
