@@ -21,7 +21,6 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ActionResult;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
@@ -105,19 +104,19 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 				int slotID = -1;
 				for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
 					ItemStack stack = entity.inventory.mainInventory.get(i);
-					if (stack != null && stack.getItem() == new ItemStack(Items.ARROW, (int) (1)).getItem()) {
+					if (stack != null && stack.getItem() == new ItemStack(RubyNuggetItem.block, (int) (1)).getItem()) {
 						slotID = i;
 						break;
 					}
 				}
 				if (entity.abilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0 || slotID != -1) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 3f, 5, 5);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1.7f, 2, 5);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					if (entity.abilities.isCreativeMode) {
 						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
 					} else {
 						ItemStack stack = entity.inventory.getStackInSlot(slotID);
-						if (new ItemStack(Items.ARROW, (int) (1)).isDamageable()) {
+						if (new ItemStack(RubyNuggetItem.block, (int) (1)).isDamageable()) {
 							if (stack.attemptDamageItem(1, random, entity)) {
 								stack.shrink(1);
 								stack.setDamage(0);
@@ -166,7 +165,7 @@ public class RubyEnforcedBowItem extends JramModElements.ModElement {
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return new ItemStack(Items.ARROW, (int) (1));
+			return new ItemStack(RubyNuggetItem.block, (int) (1));
 		}
 
 		@Override

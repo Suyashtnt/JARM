@@ -15,7 +15,7 @@
     },
     "stackSize": 1,
     "ammoItem": {
-      "value": "Items.ARROW"
+      "value": "CUSTOM:RubyNugget"
     },
     "shootConstantly": false,
     "usageCount": 600,
@@ -25,8 +25,8 @@
     "hasGlow": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 3.0,
-    "bulletDamage": 5.0,
+    "bulletPower": 1.7,
+    "bulletDamage": 2.0,
     "bulletKnockback": 5,
     "bulletParticles": false,
     "bulletIgnitesFire": true,
