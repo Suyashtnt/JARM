@@ -7,6 +7,9 @@
 
 Adds Ruby Stuff To Minecraft
 
+# Docs:
+https://jarm.readthedocs.io/en/latest/
+
 # [To-Do](#to-do):
 - make armor look more Modern minecraft
 - make the bow act like a proper bow
