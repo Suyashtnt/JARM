@@ -21,7 +21,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.monster.SkeletonEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
@@ -38,7 +38,6 @@ import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
 import com.tntmaninc.jram.itemgroup.JARMCreativeTabItemGroup;
-import com.tntmaninc.jram.item.RubyToolsSwordItem;
 import com.tntmaninc.jram.item.RubyArmorArmorItem;
 import com.tntmaninc.jram.JramModElements;
 
@@ -88,7 +87,7 @@ public class RubyGuardianEntity extends JramModElements.ModElement {
 			return customRender;
 		});
 	}
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends SkeletonEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -97,7 +96,7 @@ public class RubyGuardianEntity extends JramModElements.ModElement {
 			super(type, world);
 			experienceValue = 7;
 			setNoAI(false);
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(RubyToolsSwordItem.block, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(StrongRubySwordItem.block, (int) (1)));
 			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(RubyArmorArmorItem.helmet, (int) (1)));
 			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(RubyArmorArmorItem.body, (int) (1)));
 			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(RubyArmorArmorItem.legs, (int) (1)));
@@ -116,7 +115,7 @@ public class RubyGuardianEntity extends JramModElements.ModElement {
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
-			return CreatureAttribute.UNDEFINED;
+			return CreatureAttribute.ILLAGER;
 		}
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "jram:block/ruby_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "jram:block/ruby_dimension_portal_ns"
+    }
+  }
+}
