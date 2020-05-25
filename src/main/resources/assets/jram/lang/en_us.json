@@ -6,14 +6,13 @@
   "item.jram.ruby_armor_armorlegs": "Ruby Leggings",
   "entity.jram.ruby_guardian": "Ruby Guardian",
   "item.jram.ruby_tools_sword": "Ruby Sword",
+  "item.jram.ruby_nugget": "Ruby Shard",
   "block.jram.strong_diamond_block": "Strong Diamond Block",
   "item.jram.ruby_armor_armorbody": "Ruby Chestplate",
   "block.jram.ruby_ingot_ore_block": "Block of RubyIngot",
   "item.jram.strengthend_armor_armorlegs": "StrengthendArmor Leggings",
   "item.jram.ruby_tools_pickaxe": "Ruby Pickaxe",
-  "item.jram.ruby_shard": "Ruby Shard",
   "item.jram.ruby_tools_hoe": "Ruby Hoe",
-  "item.jram.ruby_ingot_ingot": "RubyIngot",
   "advancements.stronger_than_diamond.title": "Stronger Than Diamond",
   "item.jram.ruby_dimension": "Ruby Dimension Portal Igniter",
   "advancements.stronger_than_diamond.descr": "Craft a Strenghtend Diamond",
@@ -24,23 +23,15 @@
   "block.jram.ruby_fire": "Ruby Fire",
   "item.jram.ruby_tools_axe": "Ruby Axe",
   "item.jram.strengthend_armor_armorboots": "StrengthendArmor Boots",
+  "item.jram.ruby_toolkit": "Ruby Toolkit",
   "item.jram.ruby": "Ruby",
   "advancements.that_arrow_is_stong.descr": "Shoot a mob with a ruby arrow",
   "advancements.almost_like_diamond.descr": "Get your first ruby",
   "item.jram.ruby_guardian": "Ruby Guardian Spawn Egg",
   "item.jram.ruby_armor_armorhelmet": "Ruby Helmet",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   "advancements.that_arrow_is_stong.title": "That Nugget Is Stong!",
   "item.jram.strengthend_armor_armorbody": "StrengthendArmor Chestplate",
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   "advancements.that_arrow_is_stong.title": "That Shard Is Stong!",
->>>>>>> Stashed changes
   "item.jram.strengthend_diamond": "Strengthend Diamond",
   "item.jram.strong_ruby_pickaxe": "Strong Ruby Pickaxe",
   "item.jram.strengthend_armor_armorhelmet": "StrengthendArmor Helmet",

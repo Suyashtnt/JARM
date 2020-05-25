@@ -20,7 +20,7 @@ import com.tntmaninc.jram.JramModElements;
 
 @JramModElements.ModElement.Tag
 public class RubyNuggetItem extends JramModElements.ModElement {
-	@ObjectHolder("jram:ruby_shard")
+	@ObjectHolder("jram:ruby_nugget")
 	public static final Item block = null;
 	public RubyNuggetItem(JramModElements instance) {
 		super(instance, 38);
@@ -33,7 +33,7 @@ public class RubyNuggetItem extends JramModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(JARMCreativeTabItemGroup.tab).maxStackSize(64));
-			setRegistryName("ruby_shard");
+			setRegistryName("ruby_nugget");
 		}
 
 		@Override

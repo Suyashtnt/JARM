@@ -1,0 +1,42 @@
+{
+  "group": "jram",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "jram:strengthend_diamond"
+    },
+    "1": {
+      "item": "jram:strengthend_diamond"
+    },
+    "2": {
+      "item": "jram:strengthend_diamond"
+    },
+    "3": {
+      "item": "jram:strengthend_diamond"
+    },
+    "4": {
+      "item": "minecraft:chest"
+    },
+    "5": {
+      "item": "jram:strengthend_diamond"
+    },
+    "6": {
+      "item": "jram:strengthend_diamond"
+    },
+    "7": {
+      "item": "jram:strengthend_diamond"
+    },
+    "8": {
+      "item": "jram:strengthend_diamond"
+    }
+  },
+  "result": {
+    "item": "jram:ruby_toolkit",
+    "count": 1
+  }
+}
