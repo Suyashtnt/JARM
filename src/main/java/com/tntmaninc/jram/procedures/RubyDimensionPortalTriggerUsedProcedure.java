@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 
 import java.util.Random;
 
+import com.tntmaninc.jram.block.StrongDiamondBlockBlock;
 import com.tntmaninc.jram.block.RubyFireBlock;
 import com.tntmaninc.jram.JramModElements;
 
@@ -41,12 +42,18 @@ public class RubyDimensionPortalTriggerUsedProcedure extends JramModElements.Mod
 		int z = (int) dependencies.get("z");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		World world = (World) dependencies.get("world");
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), RubyFireBlock.block.getDefaultState(), 3);
-		{
-			ItemStack _ist = (itemstack);
-			if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
-				_ist.shrink(1);
-				_ist.setDamage(0);
+		double DoNothing = 0;
+		if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == StrongDiamondBlockBlock.block.getDefaultState()
+				.getBlock())) {
+			DoNothing = (double) 0;
+		} else {
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), RubyFireBlock.block.getDefaultState(), 3);
+			{
+				ItemStack _ist = (itemstack);
+				if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
+					_ist.shrink(1);
+					_ist.setDamage(0);
+				}
 			}
 		}
 	}
