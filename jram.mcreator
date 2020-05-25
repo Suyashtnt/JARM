@@ -565,31 +565,46 @@
       "registry_name": "strengthend_armor_armor_boots_recipe"
     },
     {
-      "name": "RubyToolkit",
-      "type": "item",
+      "name": "RubyFire",
+      "type": "block",
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ruby_toolkit"
+      "registry_name": "ruby_fire"
     },
     {
-      "name": "RubyToolspackGUI",
-      "type": "gui",
+      "name": "RubyDimensionPortalTriggerUsed",
+      "type": "procedure",
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ruby_toolspack_gui"
-    },
-    {
-      "name": "RubyToolkitRecipe",
-      "type": "recipe",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ruby_toolkit_recipe"
+      "registry_name": "ruby_dimension_portal_trigger_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -617,6 +632,7 @@
       "block.jram.ruby_biome_ruby_ore": "Dense Ruby Ore",
       "block.jram.ruby_ore": "Ruby Ore",
       "advancements.almost_like_diamond.title": "Almost Like Diamond",
+      "block.jram.ruby_fire": "Ruby Fire",
       "item.jram.ruby_tools_axe": "Ruby Axe",
       "item.jram.strengthend_armor_armorboots": "StrengthendArmor Boots",
       "item.jram.ruby_toolkit": "Ruby Toolkit",
