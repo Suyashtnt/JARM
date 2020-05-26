@@ -676,6 +676,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_brick_recipe"
+    },
+    {
+      "name": "RubyToolkitGUI",
+      "type": "gui",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_toolkit_gui"
+    },
+    {
+      "name": "RubyToolkit",
+      "type": "item",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_toolkit"
     }
   ],
   "variable_elements": [],

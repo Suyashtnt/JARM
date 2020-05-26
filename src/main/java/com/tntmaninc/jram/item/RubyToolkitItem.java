@@ -37,7 +37,7 @@ import java.util.List;
 import io.netty.buffer.Unpooled;
 
 import com.tntmaninc.jram.itemgroup.JARMCreativeTabItemGroup;
-import com.tntmaninc.jram.gui.RubyToolspackGUIGui;
+import com.tntmaninc.jram.gui.RubyToolkitGUIGui;
 import com.tntmaninc.jram.JramModElements;
 
 @JramModElements.ModElement.Tag
@@ -45,7 +45,7 @@ public class RubyToolkitItem extends JramModElements.ModElement {
 	@ObjectHolder("jram:ruby_toolkit")
 	public static final Item block = null;
 	public RubyToolkitItem(JramModElements instance) {
-		super(instance, 55);
+		super(instance, 64);
 	}
 
 	@Override
@@ -56,16 +56,6 @@ public class RubyToolkitItem extends JramModElements.ModElement {
 		public ItemCustom() {
 			super(new Item.Properties().group(JARMCreativeTabItemGroup.tab).maxStackSize(1));
 			setRegistryName("ruby_toolkit");
-		}
-
-		@Override
-		public boolean hasContainerItem() {
-			return true;
-		}
-
-		@Override
-		public ItemStack getContainerItem(ItemStack itemStack) {
-			return new ItemStack(this);
 		}
 
 		@Override
@@ -86,7 +76,7 @@ public class RubyToolkitItem extends JramModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("Holds all your tools"));
+			list.add(new StringTextComponent("Holds all your ruby items"));
 		}
 
 		@Override
@@ -108,7 +98,7 @@ public class RubyToolkitItem extends JramModElements.ModElement {
 						PacketBuffer packetBuffer = new PacketBuffer(Unpooled.buffer());
 						packetBuffer.writeBlockPos(new BlockPos(x, y, z));
 						packetBuffer.writeByte(hand == Hand.MAIN_HAND ? 0 : 1);
-						return new RubyToolspackGUIGui.GuiContainerMod(id, inventory, packetBuffer);
+						return new RubyToolkitGUIGui.GuiContainerMod(id, inventory, packetBuffer);
 					}
 				}, buf -> {
 					buf.writeBlockPos(new BlockPos(x, y, z));
