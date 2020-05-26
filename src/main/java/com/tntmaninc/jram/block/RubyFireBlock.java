@@ -15,6 +15,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.Minecraft;
@@ -28,6 +29,7 @@ import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
+import com.tntmaninc.jram.procedures.RubyFireEntityCollidesInTheBlockProcedure;
 import com.tntmaninc.jram.itemgroup.JARMCreativeTabItemGroup;
 import com.tntmaninc.jram.JramModElements;
 
@@ -98,6 +100,19 @@ public class RubyFireBlock extends JramModElements.ModElement {
 					double d5 = (random.nextFloat() - 0.5D) * 0.5D;
 					world.addParticle(ParticleTypes.FLAME, d0, d1, d2, d3, d4, d5);
 				}
+		}
+
+		@Override
+		public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+			super.onEntityCollision(state, world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				RubyFireEntityCollidesInTheBlockProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

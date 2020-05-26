@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "sidehelmv2": "sidehelmv2",
+        "ruby_helmside": "ruby_helmside",
+        "coolishrubyblock": "coolishrubyblock"
+      },
+      "name": "default"
+    }
+  }
+}

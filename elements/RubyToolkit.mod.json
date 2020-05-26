@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "rubyingot_ingot",
+    "texture": "ruby_toolpack",
     "customModelName": "Normal",
-    "name": "Ruby Ingot",
+    "name": "Ruby Toolkit",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:JARMCreativeTab"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -15,13 +15,15 @@
     "toolType": 1.0,
     "damageCount": 0,
     "destroyAnyBlock": false,
-    "stayInGridWhenCrafting": false,
+    "stayInGridWhenCrafting": true,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "Holds all your tools"
+    ],
     "hasGlow": false,
-    "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
+    "guiBoundTo": "RubyToolspackGUI",
+    "inventorySize": 6,
     "inventoryStackSize": 64
   }
 }

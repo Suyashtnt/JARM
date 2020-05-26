@@ -61,7 +61,7 @@ public class StrengthendArmorArmorItem extends JramModElements.ModElement {
 			}
 
 			public float getToughness() {
-				return 0f;
+				return 2.5f;
 			}
 		};
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(JARMCreativeTabItemGroup.tab)) {

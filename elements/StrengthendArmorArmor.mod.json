@@ -14,10 +14,10 @@
       "value": "CUSTOM:JARMCreativeTab"
     },
     "armorTextureFile": "strengthendarmor",
-    "helmetName": "StrengthendArmor Helmet",
-    "bodyName": "StrengthendArmor Chestplate",
-    "leggingsName": "StrengthendArmor Leggings",
-    "bootsName": "StrengthendArmor Boots",
+    "helmetName": "Strengthend Helmet",
+    "bodyName": "Strengthend Chestplate",
+    "leggingsName": "Strengthend Leggings",
+    "bootsName": "Strengthend Boots",
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",
     "helmetModelTexture": "From armor",
@@ -38,7 +38,7 @@
     "damageValueLeggings": 18,
     "damageValueBoots": 6,
     "enchantability": 27,
-    "toughness": 0.0,
+    "toughness": 2.5,
     "equipSound": {
       "value": ""
     },
