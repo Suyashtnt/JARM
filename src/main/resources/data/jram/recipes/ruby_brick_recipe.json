@@ -1,0 +1,22 @@
+{
+  "group": "jram",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jram:ruby"
+    },
+    {
+      "item": "jram:ruby"
+    },
+    {
+      "item": "jram:ruby"
+    },
+    {
+      "item": "jram:ruby"
+    }
+  ],
+  "result": {
+    "item": "jram:ruby_brick",
+    "count": 1
+  }
+}

@@ -622,6 +622,60 @@
           }
         ]
       }
+    },
+    {
+      "name": "RubyBrick",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_brick"
+    },
+    {
+      "name": "RubyBrickStairs",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_brick_stairs"
+    },
+    {
+      "name": "RubyBrickSlab",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_brick_slab"
+    },
+    {
+      "name": "RubyBrickStairsRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_brick_stairs_recipe"
+    },
+    {
+      "name": "RubyBrickSlabRecipe",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_brick_slab_recipe"
+    },
+    {
+      "name": "RubyBrickRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_brick_recipe"
     }
   ],
   "variable_elements": [],
@@ -642,9 +696,15 @@
       "item.jram.ruby_tools_pickaxe": "Ruby Pickaxe",
       "item.jram.ruby_shard": "Ruby Shard",
       "item.jram.ruby_tools_hoe": "Ruby Hoe",
+<<<<<<< Updated upstream
       "item.jram.ruby_ingot_ingot": "RubyIngot",
+=======
+      "block.jram.ruby_brick_slab": "Ruby Brick Slab",
+      "item.jram.ruby_ingot_ingot": "Ruby Ingot",
+>>>>>>> Stashed changes
       "advancements.stronger_than_diamond.title": "Stronger Than Diamond",
       "item.jram.ruby_dimension": "Ruby Dimension Portal Igniter",
+      "block.jram.ruby_brick_stairs": "Ruby Brick Stairs",
       "advancements.stronger_than_diamond.descr": "Craft a Strenghtend Diamond",
       "item.jram.ruby_enforced_bow": "Ruby Enforced Bow",
       "block.jram.ruby_biome_ruby_ore": "Dense Ruby Ore",
@@ -662,8 +722,14 @@
       "item.jram.strengthend_armor_armorbody": "StrengthendArmor Chestplate",
       "item.jram.strengthend_diamond": "Strengthend Diamond",
       "item.jram.strong_ruby_pickaxe": "Strong Ruby Pickaxe",
+<<<<<<< Updated upstream
       "item.jram.strengthend_armor_armorhelmet": "StrengthendArmor Helmet",
       "block.jram.block_of_ruby": "Block Of Ruby"
+=======
+      "item.jram.strengthend_armor_armorhelmet": "Strengthend Helmet",
+      "block.jram.block_of_ruby": "Block Of Ruby",
+      "block.jram.ruby_brick": "Ruby Brick"
+>>>>>>> Stashed changes
     }
   },
   "workspaceSettings": {

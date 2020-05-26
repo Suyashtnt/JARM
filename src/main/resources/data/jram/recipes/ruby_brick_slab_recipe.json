@@ -1,0 +1,9 @@
+{
+  "group": "jram",
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "jram:ruby_brick"
+  },
+  "result": "jram:ruby_brick_slab"
+}

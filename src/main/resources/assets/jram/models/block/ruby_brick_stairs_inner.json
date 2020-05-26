@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "jram:blocks/rubybrick",
+    "top": "jram:blocks/rubybrick",
+    "side": "jram:blocks/rubybrick"
+  }
+}
