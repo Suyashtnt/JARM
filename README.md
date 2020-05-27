@@ -25,4 +25,4 @@ Adds Ruby Stuff To Minecraft
  7. now put that file in your mods folder
  8. done! no extra dependencies
 
-Made with MCreator, https://mcreator.net/about
+Made with MCreator, <https://mcreator.net/about>
