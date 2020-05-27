@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "rdiamond",
     "customModelName": "Normal",
-    "name": "Strengthend Diamond",
+    "name": "Strong Diamond",
     "creativeTab": {
       "value": "CUSTOM:JARMCreativeTab"
     },
@@ -25,6 +25,9 @@
     "inventoryStackSize": 64,
     "onCrafted": {
       "name": "StrengthendDiamondItemIsCraftedsmelted"
+    },
+    "onItemInUseTick": {
+      "name": "StrengthendDiamondItemInHandTick"
     }
   }
 }

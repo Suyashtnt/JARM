@@ -41,7 +41,7 @@ public class StrongDiamondBlockBlock extends JramModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(3)
+			super(Block.Properties.create(Material.IRON).sound(SoundType.STONE).hardnessAndResistance(50f, 1200f).lightValue(0).harvestLevel(3)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("strong_diamond_block");
 		}

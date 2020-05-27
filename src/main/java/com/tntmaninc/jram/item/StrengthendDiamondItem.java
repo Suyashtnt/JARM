@@ -7,9 +7,11 @@ import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
 import com.tntmaninc.jram.procedures.StrengthendDiamondItemIsCraftedsmeltedProcedure;
+import com.tntmaninc.jram.procedures.StrengthendDiamondItemInHandTickProcedure;
 import com.tntmaninc.jram.itemgroup.JARMCreativeTabItemGroup;
 import com.tntmaninc.jram.JramModElements;
 
@@ -56,6 +58,19 @@ public class StrengthendDiamondItem extends JramModElements.ModElement {
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
 				StrengthendDiamondItemIsCraftedsmeltedProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			int x = (int) entity.getPosX();
+			int y = (int) entity.getPosY();
+			int z = (int) entity.getPosZ();
+			if (selected) {
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				StrengthendDiamondItemInHandTickProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

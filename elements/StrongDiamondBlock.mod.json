@@ -24,8 +24,8 @@
     "specialInfo": [
       "Used for going to the ruby dimension"
     ],
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 50.0,
+    "resistance": 1200.0,
     "hasGravity": false,
     "creativeTab": {
       "value": "CUSTOM:JARMCreativeTab"
