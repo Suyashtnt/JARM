@@ -10,8 +10,8 @@ Adds Ruby Stuff To Minecraft
 
 
 ## To-Do
-- make armor look more Modern minecraft
-- make the bow act like a proper bow
+  -  make armor look more Modern minecraft
+  -  make the bow act like a proper bow
 
 ## How to build
 
