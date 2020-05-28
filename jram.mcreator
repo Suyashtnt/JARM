@@ -731,7 +731,8 @@
       "item.jram.strengthend_armor_armorlegs": "Strengthend Leggings",
       "item.jram.ruby_tools_pickaxe": "Ruby Pickaxe",
       "item.jram.ruby_tools_hoe": "Ruby Hoe",
-      "item.jram.ruby_ingot_ingot": "RubyIngot",
+      "block.jram.ruby_brick_slab": "Ruby Brick Slab",
+      "item.jram.ruby_ingot_ingot": "Ruby Ingot",
       "advancements.stronger_than_diamond.title": "Stronger Than Diamond",
       "item.jram.ruby_dimension": "Ruby Dimension Portal Igniter",
       "block.jram.ruby_brick_stairs": "Ruby Brick Stairs",
@@ -753,8 +754,9 @@
       "item.jram.strengthend_armor_armorbody": "Strengthend Chestplate",
       "item.jram.strengthend_diamond": "Strong Diamond",
       "item.jram.strong_ruby_pickaxe": "Strong Ruby Pickaxe",
-      "item.jram.strengthend_armor_armorhelmet": "StrengthendArmor Helmet",
-      "block.jram.block_of_ruby": "Block Of Ruby"
+      "item.jram.strengthend_armor_armorhelmet": "Strengthend Helmet",
+      "block.jram.block_of_ruby": "Block Of Ruby",
+      "block.jram.ruby_brick": "Ruby Brick"
     }
   },
   "workspaceSettings": {
@@ -773,5 +775,5 @@
     "modElementsPackage": "com.tntmaninc.jram",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000321322
+  "mcreatorVersion": 202000322116
 }
