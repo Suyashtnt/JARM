@@ -10,6 +10,7 @@ import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Direction;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -19,6 +20,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.Minecraft;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Blocks;
@@ -55,8 +57,8 @@ public class RubyFireBlock extends JramModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.FIRE).sound(SoundType.PLANT).hardnessAndResistance(0.7999999999999999f, 10f).lightValue(15)
-					.doesNotBlockMovement().notSolid());
+			super(Block.Properties.create(Material.FIRE).sound(SoundType.PLANT).hardnessAndResistance(0f, 10f).lightValue(15).doesNotBlockMovement()
+					.notSolid());
 			setRegistryName("ruby_fire");
 		}
 
@@ -68,6 +70,16 @@ public class RubyFireBlock extends JramModElements.ModElement {
 		@Override
 		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
 			return true;
+		}
+
+		@Override
+		public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+			return 20;
+		}
+
+		@Override
+		public MaterialColor getMaterialColor(BlockState state, IBlockReader blockAccess, BlockPos pos) {
+			return MaterialColor.TNT;
 		}
 
 		@Override
