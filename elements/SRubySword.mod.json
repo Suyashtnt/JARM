@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:BlockOfRuby"
+        "value": ""
       },
       {
-        "value": "Blocks.DIAMOND_BLOCK"
+        "value": "CUSTOM:StrengthendDiamond"
       },
       {
-        "value": "CUSTOM:BlockOfRuby"
+        "value": ""
       },
       {
-        "value": "Blocks.DIAMOND_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:RubyIngotOreBlock"
+        "value": "CUSTOM:StrengthendDiamond"
       },
       {
-        "value": "Blocks.DIAMOND_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:BlockOfRuby"
+        "value": ""
       },
       {
-        "value": "Blocks.DIAMOND_BLOCK"
+        "value": "Items.STICK"
       },
       {
-        "value": "CUSTOM:BlockOfRuby"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:StrengthendDiamond"
+      "value": "CUSTOM:StrongRubySword"
     },
-    "name": "strong_diamond",
+    "name": "s_ruby_sword",
     "namespace": "mod"
   }
 }

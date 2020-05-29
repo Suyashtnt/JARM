@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:RubyIngotIngot"
+        "value": "CUSTOM:StrengthendDiamond"
       },
       {
-        "value": "CUSTOM:Ruby"
+        "value": "CUSTOM:StrengthendDiamond"
       },
       {
-        "value": "CUSTOM:RubyIngotIngot"
+        "value": "CUSTOM:StrengthendDiamond"
       },
       {
-        "value": "CUSTOM:Ruby"
+        "value": ""
       },
       {
-        "value": "Items.DIAMOND"
+        "value": "Items.STICK"
       },
       {
-        "value": "CUSTOM:Ruby"
+        "value": ""
       },
       {
-        "value": "CUSTOM:RubyIngotIngot"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ruby"
+        "value": "Items.STICK"
       },
       {
-        "value": "CUSTOM:RubyIngotIngot"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:StrengthendDiamond"
+      "value": "CUSTOM:StrongRubyPickaxe"
     },
-    "name": "ruby_diamond_recipe",
+    "name": "s_ruby_pick",
     "namespace": "mod"
   }
 }

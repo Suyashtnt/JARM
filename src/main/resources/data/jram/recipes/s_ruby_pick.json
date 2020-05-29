@@ -1,0 +1,30 @@
+{
+  "group": "jram",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "jram:strengthend_diamond"
+    },
+    "1": {
+      "item": "jram:strengthend_diamond"
+    },
+    "2": {
+      "item": "jram:strengthend_diamond"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "jram:strong_ruby_pickaxe",
+    "count": 1
+  }
+}

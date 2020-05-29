@@ -1,0 +1,24 @@
+{
+  "group": "jram",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "jram:strengthend_diamond"
+    },
+    "1": {
+      "item": "jram:strengthend_diamond"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "jram:strong_ruby_sword",
+    "count": 1
+  }
+}
