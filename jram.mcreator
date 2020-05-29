@@ -720,6 +720,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "s_ruby_pick"
+    },
+    {
+      "name": "Rubything",
+      "type": "structure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubything"
     }
   ],
   "variable_elements": [],
