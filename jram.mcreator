@@ -476,15 +476,6 @@
       "registry_name": "ruby_ingot"
     },
     {
-      "name": "StrongDiamond",
-      "type": "recipe",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "strong_diamond"
-    },
-    {
       "name": "RubyGuardianDropsEntityDies",
       "type": "procedure",
       "sortid": 49,
@@ -711,6 +702,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "SRubySword",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ruby_sword"
+    },
+    {
+      "name": "SRubyPick",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ruby_pick"
     }
   ],
   "variable_elements": [],

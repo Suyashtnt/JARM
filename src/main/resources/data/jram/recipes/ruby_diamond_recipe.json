@@ -2,13 +2,19 @@
   "group": "jram",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " 1 ",
+    "012",
     "345",
-    " 7 "
+    "678"
   ],
   "key": {
+    "0": {
+      "item": "jram:ruby_ingot_ingot"
+    },
     "1": {
       "item": "jram:ruby"
+    },
+    "2": {
+      "item": "jram:ruby_ingot_ingot"
     },
     "3": {
       "item": "jram:ruby"
@@ -19,8 +25,14 @@
     "5": {
       "item": "jram:ruby"
     },
+    "6": {
+      "item": "jram:ruby_ingot_ingot"
+    },
     "7": {
       "item": "jram:ruby"
+    },
+    "8": {
+      "item": "jram:ruby_ingot_ingot"
     }
   },
   "result": {
